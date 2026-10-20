@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">jQuery基礎語法</h1>
+
+    <script>
+        // js 寫法
+
+        var title = document.getElementById('title');
+        document.write(`這是js寫法 => ${title.textContent}`);
+    </script>
+
+    <!-- jQuery寫法 -->
+    <!-- jQuery主程式 -->
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script>
+        // jQuery基本語法
+        // \$(document).ready(function(){
+        //     alert(\$('#title').text());
+        // });
+
+        // 簡化
+        $(function(){
+            alert($('#title').text());
+        });
+    </script>
+</body>
+</html>
